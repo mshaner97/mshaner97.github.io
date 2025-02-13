@@ -1,3 +1,4 @@
+console.log ("i am here")
 let game = {
     tableau: [],
     foundations: [],
