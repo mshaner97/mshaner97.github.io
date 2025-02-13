@@ -1,0 +1,35 @@
+.gif-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gif-item {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .gif-image {
+    border-radius: 8px;
+    border: 2px solid #e362a0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .favorite-button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 10px;
+    background-color: #d889af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .favorite-button.favorited {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 10px;
+    background-color: #e362a0;
+    color: white;
+    border: none;
+    border-radius: 4px;}
