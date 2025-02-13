@@ -1,0 +1,167 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 60px;
+        height: 90px;
+    }
+}
+.drag-over {
+    border: 2px dashed #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+#cardBrick {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    }
+#topRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0; 
+}
+#tableau{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid green;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+    justify-content: space-around;
+    }
+.tableau-pile {
+    width: 100px;
+    height: 400px;
+    position: relative;
+    border: 2px dashed grey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-height: 122px;
+    overflow: visible;
+    }
+.tableau-pile .card {
+    position: absolute;
+    top: 0;
+    transition: top 0.3s ease;
+    }
+#slot{
+    display: inline-flex;
+    flex-direction: row;
+    border: 3px solid lightgoldenrodyellow;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+#suitDecks{
+    display: inline-flex;
+    flex-direction: row;
+    border: 3px solid yellow;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.foundationDeck {
+    width: 82px;
+    height: 122px;
+    border: 2px dashed grey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    min-height: 122px;
+    position: relative;
+}
+.foundationDeck .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+/*CARD FACES*/
+.card {
+    width: 80px;
+    height: 120px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #333;
+    position: absolute;
+    display: inline-flex;
+    margin: 5px;
+    user-select: none;
+    transition: all 0.3s ease;
+    cursor: move;
+    z-index: 10;
+}
+.card:active {
+    opacity: 0.8;
+}
+.cardContent {
+ border:#187d22;
+}
+.card.hearts, .card.diamonds {
+    color: red;
+}
+.card.spades, .card.clubs {
+    color: black;
+}
+.card-value {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-value {
+    top: 5px;
+    left: 5px;
+}
+
+.bottom-value {
+    bottom: 5px;
+    right: 5px;
+    transform: rotate(180deg);
+}
+
+.center-suit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+.card.facedown {
+    background: linear-gradient(135deg, #187d22 0%,#22b331 50%,#2ef742 51%,#b7f9be 100%);
+}
+
+.stockDeck {
+    width: 82px;
+    height: 122px;
+    border: 3px solid #1db8b5;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 10px;
+}
+
+.wasteDeck {
+    width: 82px;
+    height: 122px;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 10px;
+    vertical-align: top;
+    border: 3px solid lime;
+}

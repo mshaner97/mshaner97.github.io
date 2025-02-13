@@ -1,0 +1,108 @@
+
+        .game-container {
+            padding: 20px;
+            background: #076324;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 80px;
+            height: 120px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #333;
+            position: relative;
+            display: inline-flex;
+            margin: 5px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .card-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding: 5px;
+        }
+
+        .card.hearts, .card.diamonds {
+            color: red;
+        }
+
+        .card.spades, .card.clubs {
+            color: black;
+        }
+
+        .card-value {
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .top-value {
+            top: 5px;
+            left: 5px;
+        }
+
+        .bottom-value {
+            bottom: 5px;
+            right: 5px;
+            transform: rotate(180deg);
+        }
+
+        .center-suit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+        }
+
+        .card.facedown {
+            background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+        }
+
+        .tableau-pile {
+            min-height: 140px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .foundation-pile {
+            width: 82px;
+            height: 122px;
+            border: 2px dashed #fff;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .stock-pile {
+            width: 82px;
+            height: 122px;
+            border: 2px dashed #fff;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .waste-pile {
+            width: 82px;
+            height: 122px;
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: top;
+        }
+
+        .game-area {
+            margin-top: 20px;
+        }
+
+        .top-area {
+            margin-bottom: 40px;
+        }
+    
