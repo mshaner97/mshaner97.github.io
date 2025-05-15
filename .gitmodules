@@ -1,0 +1,3 @@
+[submodule "vcard-personal-portfolio"]
+	path = vcard-personal-portfolio
+	url = https://github.com/codewithsadee/vcard-personal-portfolio.git
