@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: hotpink;
+}
+
+button{
+  padding: 5px;
+  margin: 25px;
+  color: white;
+  background-color: hotpink;
+}
+nav.favoritespage{
+  color: hotpink;
+  color: pink;
+}
+nav.searchpage{
+  color: pink;
+}
