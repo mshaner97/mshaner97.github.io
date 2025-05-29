@@ -5,7 +5,6 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* <App /> */}
-    <iframe src="../../public/solitaregame/solitare.html" width={1000} height={1000}></iframe>
+    { <App /> }
   </StrictMode>,
 )
