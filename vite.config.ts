@@ -11,7 +11,7 @@ export default defineConfig({
         // Your Giffy App
         gifapp: 'gifapp.html',
         // Your Solitaire Game
-        solitaire: 'src/projects/solitairegame/solitaire.html',
+        solitaire: 'public/projects/solitairegame/solitaire.html',
       }
     }
   },
